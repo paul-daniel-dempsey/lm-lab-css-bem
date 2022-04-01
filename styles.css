@@ -1,7 +1,43 @@
 /* You can delete / re-write this img class  */
 
-img {
-    max-width: 200px;
+
+/* Tag - Not Recommended */ 
+h1 {
+    font-size: 2.25rem;     
 }
 
-/* Happy coding! */
+ /* OCSS */
+.container {
+    display : flex;
+    flex-flow: col wrap;
+    background: whitesmoke;
+}
+.card {
+    width: 20rem;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    margin: 2px;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;  
+}
+
+/* Skins OCSS */
+.cardForce{
+    color :aquamarine;
+    background: green;
+    border:5px solid lightgreen;
+    }
+
+.cardEmpire {
+color :cornflowerblue;
+background: blue;
+border:4px solid lightblue;
+}
+    
+/* Block Element  */
+
