@@ -1,80 +1,90 @@
-/* Tag - Not Recommended */ 
+/* Tag - Not Recommended */
 h1 {
-    font-size: 2.25rem;     
+  font-size: 2.25rem;
 }
 
 .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container > * {
+  flex-grow: 0;
+  flex-basis: 40%;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content:center
-}
-.container>* {
+    flex-flow: col wrap;
+  }
+
+  .container > * {
     flex-grow: 0;
-    flex-basis: 40%;
+    flex-basis: 80%;
+  }
 }
-@media only screen and (max-width: 400px){
-    .container {
-        display : flex;
-        flex-flow: col wrap;
-    }
-    .container>* {
-        flex-grow: 0;
-        flex-basis: 80%;
-    }
-}
-
-
- /* OCSS */
+/* SCCS Variables */
+/* SCSS Mixins */
+/* OCSS */
 .card {
-    width: 20rem;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    margin: 2px;
+  width: 20rem;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin: 2px;
 }
-  
+
 /* Skins OCSS */
-.cardForce{
-color :aquamarine;
-background: green;
-border:5px solid lightgreen;
+.cardForce {
+  color: aquamarine;
+  background: green;
+  border: 5px solid lightgreen;
 }
+
 .cardEmpire {
-color :cornflowerblue;
-background: blue;
-border:4px solid lightblue;
+  color: cornflowerblue;
+  background: blue;
+  border: 4px solid lightblue;
 }
 
 /* Block Tag - Not Recommended */
 .card h2 {
-font-size: 1.5rem;
-text-align: center;     
+  font-size: 1.5rem;
+  text-align: center;
 }
+
 .card p {
-font-size: 0.9rem;  
-text-align : left  
+  font-size: 0.9rem;
+  text-align: left;
 }
 
 /* Block Element  */
 .card__img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 90%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
+
 .cardForce__button {
-    color: green;
-    background-color: yellowgreen;
+  color: rgb(0, 128, 0);
+  background-color: yellowgreen;
 }
+
 .cardEmpire__button {
-    color: crimson;
-    background-color: lightcoral;
+  color: rgb(255, 0, 0);
+  background-color: lightcoral;
 }
 
 /* Block Element Model */
 .card__p--hidden {
-visibility: hidden;
+  visibility: hidden;
 }
+
 .card__p--visible {
-visibility: visible;
+  visibility: visible;
 }
+
+/*# sourceMappingURL=styles.css.map */
