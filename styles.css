@@ -3,12 +3,28 @@ h1 {
     font-size: 2.25rem;     
 }
 
- /* OCSS */
 .container {
-    display : flex;
-    flex-flow: col wrap;
-    background: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center
 }
+.container>* {
+    flex-grow: 0;
+    flex-basis: 40%;
+}
+@media only screen and (max-width: 400px){
+    .container {
+        display : flex;
+        flex-flow: col wrap;
+    }
+    .container>* {
+        flex-grow: 0;
+        flex-basis: 80%;
+    }
+}
+
+
+ /* OCSS */
 .card {
     width: 20rem;
     padding: 10px;
@@ -45,6 +61,14 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 90%;  
+}
+.cardForce__button {
+    color: green;
+    background-color: yellowgreen;
+}
+.cardEmpire__button {
+    color: crimson;
+    background-color: lightcoral;
 }
 
 /* Block Element Model */
